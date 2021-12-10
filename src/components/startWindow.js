@@ -58,7 +58,7 @@ export default function StartWindow() {
   });
 
   const handleSearch = () => {
-    fetch(`http://www.omdbapi.com/?apikey=993add81&s=${movie}`)
+    fetch(`https://www.omdbapi.com/?apikey=993add81&s=${movie}`)
       .then((resp) => {
         if (resp.ok) {
           return resp.json();

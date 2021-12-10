@@ -47,7 +47,7 @@ export default function WishList() {
 
     if (ids[0].length !== 0) {
       ids?.forEach((el) => {
-        fetch(`http://www.omdbapi.com/?i=${el}&apikey=993add81`)
+        fetch(`https://www.omdbapi.com/?i=${el}&apikey=993add81`)
           .then((resp) => {
             if (resp.ok) {
               return resp.json();
